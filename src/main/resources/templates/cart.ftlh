@@ -25,7 +25,7 @@
             <div class="form-group col-md-6">
                 <select class="form-control" id="exampleFormControlSelect1" name="product">
                     <#list products as product>
-                        <option>${product.id}</option>
+                        <option value=${product.id}>${product.name}</option>
                     </#list>
                 </select>
             </div>
