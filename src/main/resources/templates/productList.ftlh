@@ -17,7 +17,7 @@
 
             <div class="row">
                 <div class="col">
-                    <input type="text" class="form-control" placeholder="Название товара">
+                    <input type="text" class="form-control" name="name" placeholder="Название товара">
                 </div>
 
                 <div class="col">
@@ -54,10 +54,10 @@
                     <td scope="row">${product.name}</td>
                     <td scope="row">${product.cost}</td>
                     <td scope="row">
-                        <a href="product/product/${product.id}">Редактировать</a>
+                        <a href="product/${product.id}">Редактировать</a>
                     </td>
                     <td scope="row">
-                        <a href="product/product/delete/${product.id}">Удалить</a>
+                        <a href="/delete/${product.id}">Удалить</a>
                     </td>
                 </tr>
             </#list>

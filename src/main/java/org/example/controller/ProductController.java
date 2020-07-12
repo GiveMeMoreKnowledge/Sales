@@ -49,7 +49,7 @@ public class ProductController {
     public String deleteProductForm(@PathVariable Product product, Model model) {
         model.addAttribute("product", product);
 
-        return "/productDelete";
+        return "productDelete";
     }
 
     @PostMapping("/prodDelete")
