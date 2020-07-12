@@ -26,7 +26,7 @@ public class SaleController {
         model.addAttribute("salePosition", saleService.findAllSalePosition());
         model.addAttribute("products", productService.findAll());
 
-        return "/cartList";
+        return "/cart";
     }
 
     @GetMapping("/cart")

@@ -1,10 +1,18 @@
 <#import "parts/common.ftlh" as c>
-<#macro cartList>
 
 <@c.page>
 
+    Добавление продажи
+
+    <form action="/sale" method="post">
+        <input type="hidden" value="${_csrf.token}" name="_csrf">
+        <button type="submit">Добавить продажу</button>
+    </form>
+
+    Корзина
+
     <table class="table">
-        <thead class="thead-dark">
+        <thead>
         <tr>
             <th scope="col">Наименование</th>
             <th scope="col">Стоимость</th>
@@ -13,7 +21,7 @@
         </thead>
 
         <tbody>
-        <#list salePosition as s>
+        <#list salesPosition as s>
             <tr>
                 <td scope="row">${s.getProduct().getName()}</td>
                 <td scope="row">${s.getProduct().getCost()}</td>
@@ -24,5 +32,3 @@
     </table>
 
 </@c.page>
-
-</#macro>
