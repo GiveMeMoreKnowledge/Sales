@@ -2,7 +2,7 @@
 
 <@c.page>
 
-    Добавление продажи
+    <h3>Добавление продажи</h3>
 
     <form action="/sale" method="post">
         <input type="hidden" value="${_csrf.token}" name="_csrf">

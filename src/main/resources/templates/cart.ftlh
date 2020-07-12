@@ -3,6 +3,16 @@
 
 <@c.page>
 
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Главная</a></li>
+            <li class="breadcrumb-item"><a href="/sales">Инфо о продажах</a></li>
+            <li class="breadcrumb-item"><a href="/history">История скидок</a></li>
+            <li class="breadcrumb-item"><a href="/statistic">Статистика</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Корзина</li>
+        </ol>
+    </nav>
+
     <div class="row">
         <div class="col-sm">
             <h3>Добавление товаров в корзину</h3>

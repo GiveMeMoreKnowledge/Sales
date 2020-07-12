@@ -2,6 +2,16 @@
 
 <@c.page>
 
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="/">Главная</a></li>
+            <li class="breadcrumb-item"><a href="/cart">Корзина</a></li>
+            <li class="breadcrumb-item"><a href="/history">История скидок</a></li>
+            <li class="breadcrumb-item"><a href="/statistic">Статистика</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Инфо о продажах</li>
+        </ol>
+    </nav>
+
     <h3>Продажи</h3>
 
     <table class="table">
